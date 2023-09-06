@@ -1,0 +1,77 @@
+/* project.css */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+#Projects {
+  padding: 20px; /* Add padding as needed */
+  display: flex;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribute columns evenly */
+  background-color: white;
+}
+
+.column {
+  flex: 1; /* Each column occupies an equal portion of the container */
+  background-color: #f0f0f0; /* Background color for columns (light gray) */
+  padding: 20px; /* Add padding as needed */
+  border: 1px solid #ccc; /* Add borders or adjust as needed */
+  color: black;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.column p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.column h1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.column:hover {
+  background-color: #07b4e8; /* Change background color on hover */
+  transform: scale(1.05); /* Scale the column up slightly on hover */
+}
+
+.column:hover h1 {
+  background-color: #333; /* Change the h1 background color on hover */
+}
+
+.intro-text h2 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(12, 143, 219);
+  margin-top: 40px;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 100px;
+  margin-left: 100px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.intro-text p {
+  color: black;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.intro-text {
+  flex: 1; /* Each column occupies an equal portion of the container */
+  background-color: #f0f0f0; /* Background color for columns (light gray) */
+  padding: 20px; /* Add padding as needed */
+  padding-right: 100px;
+  border: 1px solid #ccc; /* Add borders or adjust as needed */
+  color: black;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Add a CSS rule for the image to make it smaller */
+.column img {
+  max-height: 200px; /* Adjust the max height as needed */
+  margin-top: 40px;
+}

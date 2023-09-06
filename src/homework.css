@@ -1,0 +1,12 @@
+/* homework.css */
+
+  
+  .Homework h1 {
+    background: white;
+    margin: 30px;
+    font-family: 'Rajdhani', sans-serif;
+   color: black;
+    padding: 20px; /* Add padding as desired */
+    text-align: center;
+  }
+  

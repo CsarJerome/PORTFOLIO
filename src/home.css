@@ -1,0 +1,86 @@
+/* home.css */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+#home::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('./jerome.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  z-index: -1;
+}
+
+.content-left {
+  font-size: 20px;
+  flex: 1;
+  text-align: center;
+  
+}
+.content-left h1{
+  font-family: 'Rajdhani', sans-serif;
+}
+.content-left p{
+  margin-top: 50px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.content-right {
+  flex: 1;
+}
+
+.top-right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 1;
+  height: 100vh;
+  width: auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+}
+/* home.css */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #0077B5; /* Facebook Blue */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.gmail-button {
+  background-color: #000000; /* Gmail Red */
+}
+
+.button:hover {
+  background-color: #0055A7; /* Darker shade for hover effect */
+}
+
+
+/* home.css */
+@keyframes textAnimation {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.text-animation {
+  animation: textAnimation 5s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0; /* Initially hidden */
+}
